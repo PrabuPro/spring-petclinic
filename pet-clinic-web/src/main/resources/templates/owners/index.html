@@ -8,5 +8,11 @@
 
 <h1>List of owners</h1>
 
+<div th:each="owner : ${owners}">
+    <p th:text="${owner?.id}">1</p>
+    <p th:text="${owner?.firstName}">1</p>
+    <p th:text="${owner?.lastName}">1</p>
+</div>
+
 </body>
 </html>
