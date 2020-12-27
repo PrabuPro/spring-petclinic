@@ -6,5 +6,10 @@
 </head>
 <body>
 <h1>Vet index</h1>
+<div th:each="vet : ${vets}">
+    <p th:text="${vet?.id}">1</p>
+    <p th:text="${vet?.firstName}">1</p>
+    <p th:text="${vet?.lastName}">1</p>
+</div>
 </body>
 </html>
